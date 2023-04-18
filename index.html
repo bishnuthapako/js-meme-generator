@@ -4,10 +4,78 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- google font -->
+                <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <title>JS-Meme Generator</title>
 </head>
 <body>
+    <div class="container mt-5">
+      <div class="form-check form-switch">
+        <input class="form-check-input" type="checkbox" id="toggleButton" />
+        <!-- <label class="form-check-label" for="toggleButton">Toggle</label> -->
+      </div>
+        <h1 class="mb-4 text-center">Meme Generator</h1>
+        <form id="meme-form">
+          <div class="mb-3">
+            <label for="image-url" class="form-label">Image URL</label>
+            <input type="url" class="form-control" id="image-url" required>
+          </div>
+          <div class="mb-3">
+            <label for="heading-text" class="form-label">Heading Text</label>
+            <input type="text" class="form-control" id="heading-text" required>
+          </div>
+          <div class="mb-3">
+            <label for="bottom-text" class="form-label">Bottom Text</label>
+            <input type="text" class="form-control" id="bottom-text" required>
+          </div>
+          <button type="submit" class="btn btn-success">Generate Meme</button>
+        </form>
+    </div>
+    <div class="container mt-5">
+        <h2 class="mb-4 text-center">Generated Memes</h2>
+        <hr class="mt-1 mb-4"/>
+        <div class="row g-3 mb-2" id="meme-grid">
+          <!-- <div class="col-md-4 meme-container">
+            <img src="https://media.giphy.com/media/mCRJDo24UvJMA/giphy.gif" alt="Sample Meme" class="img-fluid">
+            <h3 class="meme-text meme-top-text mt-3">This is another heading</h3>
+            <h3 class="meme-text meme-bottom-text">This is bottom heading</h3> -->
+            <!-- <div class="meme-text meme-top-text">This is a heading</div>
+            <div class="meme-text meme-bottom-text">This is the bottom text</div> -->
+          <!-- </div> -->
+          <!-- another column -->
+          <!-- <div class="col-md-4 meme-container"> -->
+            <!-- <img src="https://media.giphy.com/media/ICOgUNjpvO0PC/giphy.gif" alt="Sample Meme" class="img-fluid">
+            <h3 class="meme-text meme-top-text mt-3">This is another heading</h3>
+            <h3 class="meme-text meme-bottom-text">This is bottom heading</h3> -->
+            <!-- <div class="meme-text meme-top-text">This is a heading</div>
+            <div class="meme-text meme-bottom-text">This is the bottom text</div> -->
+          <!-- </div> -->
+          <!-- end column -->
+              <!-- another column -->
+              <!-- <div class="col-md-4 meme-container">
+                <img src="https://media.giphy.com/media/11quO2C07Sh2oM/giphy.gif" alt="Sample Meme" class="img-fluid">
+                <h3 class="meme-text meme-top-text mt-3">This is another heading</h3>
+                <h3 class="meme-text meme-bottom-text">This is bottom heading</h3>
+                <!-- <div class="meme-text meme-top-text">This is a heading</div>
+                <div class="meme-text meme-bottom-text">This is the bottom text</div> -->
+              <!-- </div>  -->
+              <!-- end column -->
+     
+              <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+              <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+        </div>
+      </div>
+      
+    
+      
+     
+      
+      
+      
     <script src="script.js"></script>
 </body>
 </html>
