@@ -84,7 +84,14 @@ document.addEventListener("DOMContentLoaded", () => {
 
   function displayToPage() {
     const memeStore = JSON.parse(localStorage.getItem("meme") || "[]");
-    memeStore.forEach((element) => generateMemeElement(element));
+    if(memeStore.length === 0){
+      const memeDiv = document.querySelectorAll('.container');
+      for(let divs of memeDiv){
+        divs.style.display = "none"
+      }
+    } else {
+      memeStore.forEach((element) => generateMemeElement(element));
+    }
   }
 });
 
