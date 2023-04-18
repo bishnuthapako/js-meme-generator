@@ -85,7 +85,7 @@ document.addEventListener("DOMContentLoaded", () => {
   function displayToPage() {
     const memeStore = JSON.parse(localStorage.getItem("meme") || "[]");
     if(memeStore.length === 0){
-      const memeDiv = document.querySelectorAll('.container');
+      const memeDiv = document.querySelectorAll('.meme-container');
       for(let divs of memeDiv){
         divs.style.display = "none"
       }
